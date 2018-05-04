@@ -1,0 +1,121 @@
+/* sanity check */
+* {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+/* all the h1s within the header */
+header > h1 {
+  font-family: fantasy;
+  font-size: 3ems;
+  text-align: center;
+}
+
+.clearfix: after {
+  overflow: auto;
+}
+
+header nav {
+  float: right;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: goldenrod;
+  margin-top: -20px;
+  padding: 20px;
+}
+
+body {
+  background-color: pink;
+}
+
+main {
+  background-color: #BADA55;
+}
+
+footer {
+  background-color: chartreuse;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+a:active {
+  color: black;
+}
+
+a:visited {
+  color: pink;
+}
+
+/* img {
+  width: 100%;
+} */
+
+small {
+  font-family: fantasy;
+  color: white;
+  font-size: 0.5 ems;
+}
+
+img {
+  width: 50%;
+  height: 42%%;
+}
+
+#carrot {
+  width: 35%
+  height: 15%;
+}
+
+span {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+
+/* takes the direct childen of section and make them line up in a row */
+section {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+/*  I have overridden bootsraps default hr color with my own*/
+hr {
+  /* 3 #AAA is #aaaaaa */
+  border: solid #CCC 1px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* media queries */
+/* 1000 breakpoint*/
+@media screen and (max-width: 1000px) {
+  article {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  section {
+    flex-direction: column-reverse;
+  }
+
+  article {
+    margin: auto;
+    width: 100%;
+  }
+
+  img {
+    margin: auto;
+    width: 100%
+  }
+}
